@@ -1,5 +1,6 @@
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
+import Benefits from "@/scenes/benefits";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/type";
 
@@ -13,7 +14,7 @@ function App() {
         setIsTopOfPage(true);
         setSelectedPage(SelectedPage.Home);
       }else {
-        setIsTopOfPage(true);
+        setIsTopOfPage(false);
       }
     }
     window.addEventListener("scroll", handleScroll);
@@ -27,7 +28,8 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <Home />
+      <Home setSelectedPage={setSelectedPage}/>
+      <Benefits setSelectedPage={setSelectedPage}/>
     </div>
   )
 }

@@ -16,7 +16,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow"
+  const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
 
   return <nav>
     <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
@@ -31,28 +31,28 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               <div className={`${flexBetween} gap-8 text-sm`}>
                 <Link 
                   page="Home"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}  
+                  selectedPage={ selectedPage }
+                  setSelectedPage={ setSelectedPage }  
                 />
                 <Link 
                   page="Benefit"
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
+                  selectedPage={ selectedPage }
+                  setSelectedPage={ setSelectedPage }
                 />
                 <Link 
                   page="Our Classes" 
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
+                  selectedPage={ selectedPage }
+                  setSelectedPage={ setSelectedPage }
                 />
                 <Link 
                   page="Contact Us" 
-                  selectedPage={selectedPage}
-                  setSelectedPage={setSelectedPage}
+                  selectedPage={ selectedPage }
+                  setSelectedPage={ setSelectedPage }
                 />
               </div>
               <div className={`${flexBetween} gap-8`}>
                 <p>Sign In</p>
-                <ActionButton setSelectedPage={setSelectedPage}>Become a Member</ActionButton>
+                <ActionButton setSelectedPage={ setSelectedPage }>Become a Member</ActionButton>
               </div>
             </div> 
             ) : (
@@ -80,23 +80,23 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         <div className="ml-[33%] flex flex-col gap-10 text-2xl">
           <Link 
             page="Home"
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}  
+            selectedPage={ selectedPage }
+            setSelectedPage={ setSelectedPage }  
           />
           <Link 
             page="Benefit"
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
+            selectedPage={ selectedPage }
+            setSelectedPage={ setSelectedPage }
           />
           <Link 
             page="Our Classes" 
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
+            selectedPage={ selectedPage }
+            setSelectedPage={ setSelectedPage }
           />
           <Link 
             page="Contact Us" 
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
+            selectedPage={ selectedPage }
+            setSelectedPage={ setSelectedPage }
           />
         </div>
       </div>

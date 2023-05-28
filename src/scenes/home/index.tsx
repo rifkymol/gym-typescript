@@ -6,6 +6,7 @@ import HomePageGraphic from '@/assets/HomePageGraphic.png';
 import SponsorRedBull from '@/assets/SponsorRedBull.png';
 import SponsorForbes from '@/assets/SponsorForbes.png';
 import SponsorFortune from '@/assets/SponsorFortune.png';
+import SponsorUnderArmor from '@/assets/SponsorUnderArmor.png';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { motion } from 'framer-motion';
 
@@ -13,7 +14,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 }
 
-function Home({ setSelectedPage }: Props) {
+const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
   return <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
     {/* IMAGE AND MAIN HEADER */}
@@ -37,7 +38,7 @@ function Home({ setSelectedPage }: Props) {
          >
           <div className="relative">
             <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
-              <img src={HomePageText} alt="home-page-text" />
+              <img src={ HomePageText } alt="home-page-text" />
             </div>
           </div>
           <p className="mt-8 text-sm">
@@ -70,7 +71,7 @@ function Home({ setSelectedPage }: Props) {
 
       {/* IMAGE */}
       <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
-        <img src={HomePageGraphic} alt="home-pageGraphic" />
+        <img src={ HomePageGraphic } alt="home-pageGraphic" />
       </div>
     </motion.div>
 
@@ -78,10 +79,11 @@ function Home({ setSelectedPage }: Props) {
     {isAboveMediumScreens && (
       <div className="h-[150px] w-full bg-primary-100 py-10">
         <div className="mx-auto w-5/6">
-          <div className="flex w-3/5 items-center justify-between gap-8">
-            <img src={SponsorRedBull} alt="redbull-sponsor" />
-            <img src={SponsorForbes} alt="forbes-sponsor" />
-            <img src={SponsorFortune} alt="fortune-sponsor" />
+          <div className="flex items-center justify-between gap-8">
+            <img src={ SponsorRedBull } alt="redbull-sponsor" />
+            <img src={ SponsorForbes } alt="forbes-sponsor" />
+            <img src={ SponsorFortune } alt="fortune-sponsor" />
+            <img src={ SponsorUnderArmor } alt="underarmor-sponsor" />
           </div>
         </div>
       </div>
