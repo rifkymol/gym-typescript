@@ -1,6 +1,6 @@
-import { SelectedPage } from '@/shared/type';
-import { motion } from 'framer-motion';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { SelectedPage } from '@/shared/type'
+import { motion } from 'framer-motion'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const childVariant = {
   hidden: { opacity: 0, scale: 0.9 },
@@ -14,7 +14,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void
 }
 
-function Benefit({ icon, title, description, setSelectedPage }: Props) {
+const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
   return (
     <motion.div 
       variants={ childVariant }

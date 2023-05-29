@@ -1,9 +1,9 @@
-import HText from "@/shared/HText";
-import { BenefitType, SelectedPage } from "@/shared/type";
+import HText from "@/shared/HText"
+import { BenefitType, SelectedPage } from "@/shared/type"
 import { AcademicCapIcon, HomeModernIcon, UserGroupIcon } from "@heroicons/react/24/solid"
-import { motion } from "framer-motion";
-import Benefit from "./Benefit";
-import ActionButton from "@/shared/ActionButton";
+import { motion } from "framer-motion"
+import Benefit from "./Benefit"
+import ActionButton from "@/shared/ActionButton"
 import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png"
 
 const benefits: Array<BenefitType> = [
@@ -32,7 +32,7 @@ const container = {
 }
 
 type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
+  setSelectedPage: (value: SelectedPage) => void
 }
 
 const Benefits = ({ setSelectedPage }: Props) => {

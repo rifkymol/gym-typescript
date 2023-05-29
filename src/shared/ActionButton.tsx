@@ -1,10 +1,10 @@
 import React from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
-import { SelectedPage } from "./type";
+import { SelectedPage } from "./type"
 
 type Props = {
-  children: React.ReactNode;
-  setSelectedPage: (value: SelectedPage) => void;
+  children: React.ReactNode
+  setSelectedPage: (value: SelectedPage) => void
 }
 
 const ActionButton = ({ children, setSelectedPage }: Props) => {
